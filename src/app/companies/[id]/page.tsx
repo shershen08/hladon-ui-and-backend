@@ -51,12 +51,12 @@ export default async function CompanyPage({
         {company.website && (
           <div className="flex gap-4">
             <dt className="text-muted-foreground w-24 shrink-0">Сайт</dt>
-            <dd>
+            <dd className="min-w-0">
               <a
                 href={company.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="hover:underline break-all"
               >
                 {company.website}
               </a>
