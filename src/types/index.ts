@@ -49,3 +49,16 @@ export type Package = {
   requirements: string[]
   features: string[]
 }
+
+export type Product = {
+  id: string
+  code: string
+  altCode: string | null
+  group: 'R-series' | 'ГФУ'
+  name: string
+  description: string
+  gwp: number
+  composition: string | null
+  applications: string[]
+  packaging: string[]
+}

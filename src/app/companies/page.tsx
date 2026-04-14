@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Suspense } from 'react'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { PageContainer } from '@/components/layout/page-container'
 import { getCompanies } from '@/lib/data/companies'
 import { SearchBar } from '@/components/companies/search-bar'
 import type { Company } from '@/types'
@@ -29,7 +30,7 @@ export default async function CompaniesPage({
   const distributors = companies.filter(c => c.category === 'distributor')
 
   return (
-    <main className="max-w-4xl mx-auto px-6 py-10">
+    <PageContainer>
       <h1 className="text-3xl font-bold mb-2">Компании</h1>
       <p className="text-muted-foreground mb-6">
         Участники рынка хладагентов в России.{' '}
@@ -71,7 +72,7 @@ export default async function CompaniesPage({
           )}
         </section>
       )}
-    </main>
+    </PageContainer>
   )
 }
 

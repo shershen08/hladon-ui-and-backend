@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { NavAuth } from "@/components/layout/nav-auth";
+import { NavLinks } from "@/components/layout/nav-links";
 import { MobileMenu } from "@/components/layout/mobile-menu";
 import { getSession } from "@/lib/session";
 import "./globals.css";
@@ -29,6 +30,7 @@ export default async function RootLayout({
   const session = await getSession()
 
   const navLinks = [
+    { href: "/catalog", label: "Каталог" },
     { href: "/companies", label: "Компании" },
     { href: "/events", label: "Мероприятия" },
     { href: "/documents", label: "Документы" },
@@ -42,22 +44,14 @@ export default async function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
-          <nav className="max-w-5xl mx-auto px-6 h-14 flex items-center gap-6 text-sm">
+          <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center gap-6 text-sm">
             <Link href="/" className="font-bold text-primary tracking-tight shrink-0">
               Хладоны
             </Link>
 
             {/* Desktop links */}
             <div className="hidden md:flex items-center gap-6">
-              {navLinks.map(link => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              <NavLinks links={navLinks} />
             </div>
 
             <span className="flex-1" />

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { PageContainer } from '@/components/layout/page-container'
 import { getCompany } from '@/lib/data/companies'
 import { getSession } from '@/lib/session'
 
@@ -18,7 +19,9 @@ export default async function CompanyPage({
   const showContacts = !!session && company.contacts.length > 0
 
   return (
-    <main className="max-w-2xl mx-auto px-6 py-10">
+    <PageContainer>
+      <div className="grid grid-cols-12">
+      <div className="col-span-12 md:col-span-8 lg:col-span-6">
       <Link
         href="/companies"
         className="text-sm text-muted-foreground hover:underline mb-4 inline-block"
@@ -97,6 +100,8 @@ export default async function CompanyPage({
           </Button>
         </div>
       ) : null}
-    </main>
+      </div>
+      </div>
+    </PageContainer>
   )
 }

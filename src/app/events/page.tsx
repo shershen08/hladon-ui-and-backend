@@ -1,12 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { PageContainer } from '@/components/layout/page-container'
 import { getEvents } from '@/lib/data/events'
 
 export default async function EventsPage() {
   const events = await getEvents()
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-10">
+    <PageContainer>
+      <div className="grid grid-cols-12">
+      <div className="col-span-12 lg:col-span-8">
       <h1 className="text-3xl font-bold mb-2">Мероприятия</h1>
       <p className="text-muted-foreground mb-8">Отраслевые события рынка хладагентов.</p>
 
@@ -28,6 +31,8 @@ export default async function EventsPage() {
           </Card>
         ))}
       </div>
-    </main>
+      </div>
+      </div>
+    </PageContainer>
   )
 }
