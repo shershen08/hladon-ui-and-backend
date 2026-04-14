@@ -1,0 +1,215 @@
+[
+  {
+    "id": "co-001",
+    "name": "ООО «НПО «Инженерные решения»",
+    "category": "fire_system_manufacturer",
+    "categoryLabel": "Производители пожарных систем",
+    "inn": "9719012788",
+    "website": "https://npoir.ru/",
+    "city": "Москва",
+    "address": "ул. Вельяминовская д. 34 стр. 7 (м. Семеновская)",
+    "contacts": [
+      {
+        "name": "Бачурин Дмитрий Валерьевич",
+        "role": "Генеральный директор",
+        "phone": "8 (499) 322-33-01",
+        "email": "info@punkt01.ru"
+      }
+    ],
+    "internalNotes": "Созвонился с ними 09.02.2026. Они выразили заинтересованность. Ждут письмо."
+  },
+  {
+    "id": "co-002",
+    "name": "ООО «Луис+ Холдинг»",
+    "category": "fire_system_manufacturer",
+    "categoryLabel": "Производители пожарных систем",
+    "inn": "7710284470",
+    "website": "https://luis.ru/",
+    "city": null,
+    "address": null,
+    "contacts": [],
+    "internalNotes": null
+  },
+  {
+    "id": "co-003",
+    "name": "ООО «Афеспро»",
+    "category": "fire_system_manufacturer",
+    "categoryLabel": "Производители пожарных систем",
+    "inn": "5018190714",
+    "website": "https://afes.pro/",
+    "city": null,
+    "address": null,
+    "contacts": [],
+    "internalNotes": "АФ запретил с ними общаться"
+  },
+  {
+    "id": "co-004",
+    "name": "ООО «ГК ЭТЕРНИС»",
+    "category": "fire_system_manufacturer",
+    "categoryLabel": "Производители пожарных систем",
+    "inn": "7719476850",
+    "website": "https://www.eternis.ru/",
+    "city": null,
+    "address": null,
+    "contacts": [
+      {
+        "name": "Григорий",
+        "role": null,
+        "phone": "8 (962) 980-98-44",
+        "email": "develop@eternis.ru"
+      }
+    ],
+    "internalNotes": null
+  },
+  {
+    "id": "co-005",
+    "name": "ООО НПО «РУСХИМПРОМ»",
+    "category": "distributor",
+    "categoryLabel": "Дистрибьютеры",
+    "inn": "9721210160",
+    "website": "https://rushimprom.com/",
+    "city": null,
+    "address": null,
+    "contacts": [
+      {
+        "name": "Константин Тихонов",
+        "role": "Начальник отдела закупок",
+        "phone": "8 985 108 8545",
+        "email": "kt8007@mail.ru"
+      },
+      {
+        "name": "Иван",
+        "role": "Менеджер по продажам хладонов",
+        "phone": "8 999 991 83838",
+        "email": "5600116@mail.ru"
+      }
+    ],
+    "internalNotes": null
+  },
+  {
+    "id": "co-006",
+    "name": "ООО «НОВА»",
+    "category": "distributor",
+    "categoryLabel": "Дистрибьютеры",
+    "inn": "7802756475",
+    "website": "https://www.novachem.ru/",
+    "city": "Санкт-Петербург",
+    "address": null,
+    "contacts": [
+      {
+        "name": "Алексей Коппель",
+        "role": "Руководитель отдела продаж, Промышленная химия",
+        "phone": "+7 (904) 642-80-84",
+        "phoneOffice": "+7 (800) 775-10-77 доб. 6307",
+        "email": null
+      }
+    ],
+    "internalNotes": null
+  },
+  {
+    "id": "co-007",
+    "name": "ООО «Меркурий»",
+    "category": "distributor",
+    "categoryLabel": "Дистрибьютеры",
+    "inn": null,
+    "website": "https://www.mercoil.ru/",
+    "city": null,
+    "address": null,
+    "contacts": [
+      { "name": "Ксения", "role": null, "phone": null, "email": null },
+      { "name": "Дарья", "role": null, "phone": null, "email": null }
+    ],
+    "internalNotes": null
+  },
+  {
+    "id": "co-008",
+    "name": "АО «Маркон-Холод»",
+    "category": "distributor",
+    "categoryLabel": "Дистрибьютеры",
+    "inn": "7842387150",
+    "website": "https://marcon-kholod.ru/",
+    "city": null,
+    "address": null,
+    "contacts": [
+      { "name": "Марина", "role": null, "phone": null, "email": null }
+    ],
+    "internalNotes": null
+  },
+  {
+    "id": "co-009",
+    "name": "ООО «ТД РУССКИЙ ХОЛОД»",
+    "category": "distributor",
+    "categoryLabel": "Дистрибьютеры",
+    "inn": null,
+    "website": null,
+    "city": null,
+    "address": null,
+    "contacts": [
+      { "name": null, "role": "Генеральный директор", "phone": null, "email": null }
+    ],
+    "internalNotes": null
+  },
+  {
+    "id": "co-010",
+    "name": "ООО «Транскул»",
+    "category": "distributor",
+    "categoryLabel": "Дистрибьютеры",
+    "inn": "7715439462",
+    "website": "https://transcool.ru/",
+    "city": "Мытищи",
+    "address": "Московская область, г. Мытищи, Олимпийский проспект, вл. 43, стр. 1, ангар 2.3",
+    "contacts": [
+      {
+        "name": "Ольга",
+        "role": null,
+        "phone": "915-237-84-25",
+        "email": "olga@transcool.ru"
+      },
+      {
+        "name": null,
+        "role": null,
+        "phone": null,
+        "email": "info@transcool.ru"
+      }
+    ],
+    "internalNotes": null
+  },
+  {
+    "id": "co-011",
+    "name": "ООО «Альфа-Холод»",
+    "category": "distributor",
+    "categoryLabel": "Дистрибьютеры",
+    "inn": "7729489745",
+    "website": "https://www.holodon.ru/",
+    "city": null,
+    "address": null,
+    "contacts": [
+      {
+        "name": "Алексей Валентинович Скоренко",
+        "role": "Исполнительный директор",
+        "phone": null,
+        "email": null
+      },
+      {
+        "name": "Анна Кондратюк",
+        "role": "Purchasing Director",
+        "phone": "+7 499 703 4820 доб. 112",
+        "mobile": "+7 985 100 1085",
+        "email": "dp@holodon.ru"
+      }
+    ],
+    "internalNotes": null
+  },
+  {
+    "id": "co-012",
+    "name": "ООО «Морена»",
+    "category": "distributor",
+    "categoryLabel": "Дистрибьютеры",
+    "inn": "7713576745",
+    "website": "https://morena.ru/",
+    "city": null,
+    "address": null,
+    "contacts": [],
+    "internalNotes": "Не интересует 134 и 404. Своего много."
+  }
+]
