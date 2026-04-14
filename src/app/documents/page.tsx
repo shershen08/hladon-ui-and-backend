@@ -1,16 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { baseUrl } from '@/lib/base-url'
-
-type Document = {
-  id: string
-  title: string
-  description: string
-  category: string
-  issuedBy: string
-  issuedAt: string
-  url: string | null
-}
+import { getDocuments } from '@/lib/data/documents'
 
 const CATEGORY_LABELS: Record<string, string> = {
   regulation: 'Регламент',
@@ -18,16 +8,11 @@ const CATEGORY_LABELS: Record<string, string> = {
   order: 'Приказ',
 }
 
-async function getDocuments(): Promise<Document[]> {
-  const res = await fetch(`${baseUrl()}/api/documents`, { cache: 'no-store' })
-  return res.json()
-}
-
 export default async function DocumentsPage() {
   const documents = await getDocuments()
 
   return (
-    <main className="max-w-3xl mx-auto px-4 py-10">
+    <main className="max-w-3xl mx-auto px-6 py-10">
       <h1 className="text-3xl font-bold mb-2">Нормативные документы</h1>
       <p className="text-muted-foreground mb-8">Государственные регламенты и стандарты в области хладагентов.</p>
 

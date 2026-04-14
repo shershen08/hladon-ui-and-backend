@@ -1,16 +1,10 @@
-import { getSession } from '@/lib/session'
 import { redirect } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import { baseUrl } from '@/lib/base-url'
-import type { Package } from '@/types'
-
-async function getPackages(): Promise<Package[]> {
-  const res = await fetch(`${baseUrl()}/api/packages`, { cache: 'no-store' })
-  return res.json()
-}
+import { getSession } from '@/lib/session'
+import { getPackages } from '@/lib/data/packages'
 
 export default async function PackagesPage() {
   const session = await getSession()
@@ -21,9 +15,7 @@ export default async function PackagesPage() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold mb-2">Пакеты участия</h1>
-      <p className="text-muted-foreground mb-10">
-        Выберите уровень участия на платформе.
-      </p>
+      <p className="text-muted-foreground mb-10">Выберите уровень участия на платформе.</p>
 
       <div className="grid sm:grid-cols-3 gap-6 items-start">
         {packages.map((pkg, index) => (
@@ -31,9 +23,7 @@ export default async function PackagesPage() {
             <CardHeader className="pb-3">
               <div className="flex items-center justify-between mb-1">
                 <CardTitle className="text-lg">{pkg.name}</CardTitle>
-                {index === 2 && (
-                  <Badge className="text-xs">Топ</Badge>
-                )}
+                {index === 2 && <Badge className="text-xs">Топ</Badge>}
               </div>
               <div className="mt-1">
                 {pkg.price === 0 ? (
@@ -72,10 +62,7 @@ export default async function PackagesPage() {
                 ))}
               </ul>
 
-              <Button
-                className="w-full mt-2"
-                variant={index === 2 ? 'default' : 'outline'}
-              >
+              <Button className="w-full mt-2" variant={index === 2 ? 'default' : 'outline'}>
                 {pkg.price === 0 ? 'Подключено' : 'Оставить заявку'}
               </Button>
             </CardContent>

@@ -2,6 +2,11 @@ import { NextResponse } from 'next/server'
 import { verifyCredentials, createSession } from '@/lib/session'
 
 export async function POST(req: Request) {
+  if (!process.env.SESSION_SECRET) {
+    console.error('SESSION_SECRET env variable is not set')
+    return NextResponse.json({ error: 'Server misconfiguration' }, { status: 500 })
+  }
+
   const { username, password } = await req.json()
 
   if (!username || !password) {
