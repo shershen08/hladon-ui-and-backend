@@ -34,7 +34,10 @@ export default async function RootLayout({
     { href: "/companies", label: "Компании" },
     { href: "/events", label: "Мероприятия" },
     { href: "/documents", label: "Документы" },
-    ...(session ? [{ href: "/packages", label: "Пакеты" }] : []),
+    ...(session ? [
+      { href: "/buyers", label: "Покупатели" },
+      { href: "/packages", label: "Пакеты" },
+    ] : []),
   ]
 
   return (

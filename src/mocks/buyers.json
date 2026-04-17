@@ -1,0 +1,47 @@
+[
+  {
+    "id": "buyer-001",
+    "name": "Анна Кондратюк",
+    "companyId": "co-011",
+    "email": "dp@holodon.ru",
+    "phone": "+7 985 100 1085",
+    "initials": "АК",
+    "lastActivity": "2026-04-16T14:30:00Z"
+  },
+  {
+    "id": "buyer-002",
+    "name": "Алексей Коппель",
+    "companyId": "co-006",
+    "email": "koppel@novachem.ru",
+    "phone": "+7 (904) 642-80-84",
+    "initials": "АК",
+    "lastActivity": "2026-04-15T09:15:00Z"
+  },
+  {
+    "id": "buyer-003",
+    "name": "Григорий",
+    "companyId": "co-004",
+    "email": "develop@eternis.ru",
+    "phone": "8 (962) 980-98-44",
+    "initials": "Г",
+    "lastActivity": "2026-04-14T16:45:00Z"
+  },
+  {
+    "id": "buyer-004",
+    "name": "Константин Тихонов",
+    "companyId": "co-005",
+    "email": "kt8007@mail.ru",
+    "phone": "8 985 108 8545",
+    "initials": "КТ",
+    "lastActivity": "2026-04-13T11:00:00Z"
+  },
+  {
+    "id": "buyer-005",
+    "name": "Ольга",
+    "companyId": "co-010",
+    "email": "olga@transcool.ru",
+    "phone": "915-237-84-25",
+    "initials": "О",
+    "lastActivity": "2026-03-28T08:20:00Z"
+  }
+]

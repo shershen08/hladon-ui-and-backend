@@ -62,3 +62,41 @@ export type Product = {
   applications: string[]
   packaging: string[]
 }
+
+export type Buyer = {
+  id: string
+  name: string
+  companyId: string
+  email: string
+  phone: string | null
+  initials: string
+  lastActivity: string
+}
+
+export type ThreadAttachment = {
+  name: string
+  size: number
+  url: string
+}
+
+export type ThreadMessage = {
+  id: string
+  threadId: string
+  senderType: 'buyer' | 'seller'
+  senderName: string
+  body: string
+  sentAt: string
+  attachments?: ThreadAttachment[]
+}
+
+export type BuyerThread = {
+  id: string
+  buyerId: string
+  subject: string
+  productCode: string
+  quantity: string
+  status: 'awaiting_response' | 'deal_agreed' | 'follow_up' | 'archive'
+  createdAt: string
+  updatedAt: string
+  messages: ThreadMessage[]
+}
